@@ -1,10 +1,11 @@
-
+import ProductList from './pages/ProductList';
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <h1>Latest Products</h1>
+      <ProductList />
+    </>
   );
 }
 
