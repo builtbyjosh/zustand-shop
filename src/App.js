@@ -1,10 +1,14 @@
 import ProductList from './pages/ProductList';
+import ProductPage from './pages/ProductPage';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <h1>Latest Products</h1>
-      <ProductList />
+      <Routes>
+        <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/" element={<ProductList />} />
+      </Routes>
     </>
   );
 }
